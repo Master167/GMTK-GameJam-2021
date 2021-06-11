@@ -2,3 +2,6 @@ File: dungeon_tiles.png
 Source: https://opengameart.org/content/dungeon-tileset
 Author: http://blog-buch.rhcloud.com
 
+File: Castle2.png
+Source: https://opengameart.org/content/castle-tiles-for-rpgs
+Author: Zabin, Hyptosis, and Danial Cook. https://opengameart.org/content/castle-tiles-for-rpgs

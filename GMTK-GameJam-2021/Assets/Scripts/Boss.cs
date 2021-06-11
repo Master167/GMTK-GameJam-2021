@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
     public float speed;
 
+    public Slider aggroSlider;
+
     public GameObject CurrentTarget;
     public GameObject Player;
+
+    private bool targetInRange = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +26,8 @@ public class Boss : MonoBehaviour
 
         // Set target as player.
         CurrentTarget = Player;
+
+        aggroSlider.value = aggroSlider.maxValue / 2;
     }
 
     // Update is called once per frame
@@ -32,18 +39,17 @@ public class Boss : MonoBehaviour
         var distance = heading.magnitude;
         var direction = heading / distance; // This is now the normalized direction.
 
-
-        Debug.Log($"Boss Move: X:{direction.x} Y:{direction.y}");
-
         Move(direction);
     }
 
-    private void LateUpdate()
+    void LateUpdate()
     {
         transform.rotation = Quaternion.identity;
+
+        UpdateAggro();
     }
 
-    void Move(Vector2 direction)
+    private void Move(Vector2 direction)
     {
         //Find the screen limits to the player's movement
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
@@ -58,5 +64,35 @@ public class Boss : MonoBehaviour
 
         //Update the player's position
         transform.position = pos;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.Equals(CurrentTarget))
+        {
+            Debug.Log("In Range");
+            targetInRange = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.Equals(CurrentTarget))
+        {
+            Debug.Log("out of Range");
+            targetInRange = false;
+        }
+    }
+
+    private void UpdateAggro()
+    {
+        if (targetInRange)
+        {
+            aggroSlider.value += 2f;
+        }
+        else
+        {
+            aggroSlider.value -= 1f;
+        }
     }
 }

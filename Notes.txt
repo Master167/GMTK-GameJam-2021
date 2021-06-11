@@ -1,0 +1,9 @@
+Game Jam Theme: Joined Together
+
+Game Idea: Tank and monster joined together in combat as damage dealers attempts to kill the monster.
+
+Things to Build:
+Arena
+Main Character move set
+Aggro system
+Damage dealer

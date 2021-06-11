@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
         var y = Input.GetAxis("Vertical");
 
         var direction = new Vector2(x, y);
+        Debug.Log($"Player Move: X:{direction.x} Y:{direction.y}");
 
         Move(direction);
     }

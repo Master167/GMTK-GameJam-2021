@@ -15,11 +15,11 @@ E:/Development/GMTK-GameJam-2021/GMTK-GameJam-2021
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61587
+50575
 Successfully changed project path to: E:/Development/GMTK-GameJam-2021/GMTK-GameJam-2021
 E:/Development/GMTK-GameJam-2021/GMTK-GameJam-2021
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 72.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path E:/Program Files/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,115 +35,143 @@ Initialize mono
 Mono path[0] = 'E:/Program Files/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Program Files/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001831 seconds.
+Registered in 0.006428 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.811 seconds
+- Completed reload, in  1.625 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004032 seconds.
+Registered in 0.003904 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 71.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.114 seconds
+- Completed reload, in  0.963 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.7 MB.
-System memory in use after: 92.7 MB.
+System memory in use before: 92.8 MB.
+System memory in use after: 92.8 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2513.
-Total: 3.183200 ms (FindLiveObjects: 0.296400 ms CreateObjectMapping: 0.106100 ms MarkObjects: 2.616400 ms  DeleteObjects: 0.162300 ms)
-
-========================================================================
-Received Import Request.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentContinuousPro.png
-  artifactKey: Guid(8d4a2ded892e27742bb6d4d263639dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentContinuousPro.png using Guid(8d4a2ded892e27742bb6d4d263639dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaef17e51301f07ef7fb30940787e9b7') in 0.156262 seconds
-  Import took 0.171855 seconds .
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2514.
+Total: 2.005600 ms (FindLiveObjects: 0.195000 ms CreateObjectMapping: 0.073500 ms MarkObjects: 1.627100 ms  DeleteObjects: 0.109000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001583 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentBrokenPro.png
-  artifactKey: Guid(3f0215e89d05b544d907d3a7d34fab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentBrokenPro.png using Guid(3f0215e89d05b544d907d3a7d34fab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94d09f71837ba6bea1b70d676706f55') in 0.031927 seconds
-  Import took 0.056837 seconds .
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.015425 seconds
+  Import took 0.018577 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001288 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentLinearPro.png
-  artifactKey: Guid(cafc16189f045f445bad6f5eb9e13541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentLinearPro.png using Guid(cafc16189f045f445bad6f5eb9e13541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd57e6bfaec6a3daea18c2affb73951') in 0.025540 seconds
-  Import took 0.043837 seconds .
+  Time since last request: 0.001234 seconds.
+  path: Assets/Square.png
+  artifactKey: Guid(c94bf9f3e8491a149ab6d2d0a92af2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Square.png using Guid(c94bf9f3e8491a149ab6d2d0a92af2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aeddd0e98ec6b967c2cd60a780fe97d') in 0.131836 seconds
+  Import took 0.163937 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/ShapeToolPro.png
-  artifactKey: Guid(20ac412813dce2241a95fcf2dad05436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/ShapeToolPro.png using Guid(20ac412813dce2241a95fcf2dad05436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6b51dd990e288a8fcd96b5f2b27ef1') in 0.027063 seconds
-  Import took 0.045717 seconds .
+  Time since last request: 20.762238 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(5f2d8cc18a02a3a418161b7e0b54f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(5f2d8cc18a02a3a418161b7e0b54f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5336ea48e0325d89fecbc4bd561b9b5') in 0.022926 seconds
+  Import took 0.041436 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentLinear.png
-  artifactKey: Guid(a728d9332cba5f448a36350199dc573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentLinear.png using Guid(a728d9332cba5f448a36350199dc573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7635281fb3fa89c6bff7d44a6a663a7') in 0.022434 seconds
-  Import took 0.028186 seconds .
+  Time since last request: 6.486328 seconds.
+  path: Assets/Scripts/NewBehaviourScript.cs
+  artifactKey: Guid(46da1252024d8ae42862966e113f834c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NewBehaviourScript.cs using Guid(46da1252024d8ae42862966e113f834c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a4d12643de0fb13da6c5b895b769c7') in 0.025057 seconds
+  Import took 0.029056 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004294 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2525.
+Total: 2.047100 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.063700 ms MarkObjects: 1.719900 ms  DeleteObjects: 0.088900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/ShapeTool.png
-  artifactKey: Guid(0601759dc49769849996e4dae10a2204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/ShapeTool.png using Guid(0601759dc49769849996e4dae10a2204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a728557f9aa879689d4761791e0464a') in 0.028229 seconds
-  Import took 0.032924 seconds .
+  Time since last request: 103.170063 seconds.
+  path: Assets/Square.xcf
+  artifactKey: Guid(bd8e69bcda4077947a06cd560cea7661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Square.xcf using Guid(bd8e69bcda4077947a06cd560cea7661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a5d7fbf17f1494ae3ac16f5ba1049d') in 0.013747 seconds
+  Import took 0.017261 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004003 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2529.
+Total: 2.020400 ms (FindLiveObjects: 0.186500 ms CreateObjectMapping: 0.077200 ms MarkObjects: 1.669300 ms  DeleteObjects: 0.086400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentBroken.png
-  artifactKey: Guid(b370d25fdf6f8914287e27c0c3dede6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentBroken.png using Guid(b370d25fdf6f8914287e27c0c3dede6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e4d2e0ff06304b4e66e29979edda9b') in 0.027340 seconds
-  Import took 0.030872 seconds .
+  Time since last request: 40.188831 seconds.
+  path: Assets/Square.png
+  artifactKey: Guid(c94bf9f3e8491a149ab6d2d0a92af2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Square.png using Guid(c94bf9f3e8491a149ab6d2d0a92af2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14734b148d28269b2a26cf2aaac11543') in 0.087350 seconds
+  Import took 0.091457 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentContinuous.png
-  artifactKey: Guid(229e750703f3e824ca71ddd16a5e36be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentContinuous.png using Guid(229e750703f3e824ca71ddd16a5e36be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fdb32c5eb279fe57cb83f1f983350b') in 0.026326 seconds
-  Import took 0.029880 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003684 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.850 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 95.8 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 14.431931 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
-  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cce7a24742fd5e8a8ab2da20c69032f') in 0.068457 seconds
-  Import took 0.087382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000388 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
-  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdee885e51b9ccf0fcef3a7dbe274ecc') in 0.008487 seconds
-  Import took 0.014479 seconds .
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2534.
+Total: 2.083400 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.063100 ms MarkObjects: 1.750500 ms  DeleteObjects: 0.091700 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

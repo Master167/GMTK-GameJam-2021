@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool IsLogging;
-
     public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Player has started");
     }
 
     // Update is called once per frame
@@ -24,6 +21,11 @@ public class Player : MonoBehaviour
         Debug.Log($"Player Move: X:{direction.x} Y:{direction.y}");
 
         Move(direction);
+    }
+
+    private void LateUpdate()
+    {
+        transform.rotation = Quaternion.identity;
     }
 
     void Move(Vector2 direction)

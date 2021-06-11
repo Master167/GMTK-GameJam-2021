@@ -13,7 +13,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         // Get Player
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag(Tags.Player);
 
         // Boxx moves as half speed of player
         var playerScript = Player.GetComponent<Player>();
@@ -36,6 +36,11 @@ public class Boss : MonoBehaviour
         Debug.Log($"Boss Move: X:{direction.x} Y:{direction.y}");
 
         Move(direction);
+    }
+
+    private void LateUpdate()
+    {
+        transform.rotation = Quaternion.identity;
     }
 
     void Move(Vector2 direction)

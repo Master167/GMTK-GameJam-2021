@@ -726,14 +726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1636211700, guid: c1c031fc28e1f3d4dbb4f8d99219660a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1636211700, guid: c1c031fc28e1f3d4dbb4f8d99219660a, type: 3}
-      propertyPath: m_TagString
-      value: Projectile
-      objectReference: {fileID: 0}
+    - target: {fileID: 1636211704, guid: c1c031fc28e1f3d4dbb4f8d99219660a, type: 3}
+      propertyPath: Boss
+      value: 
+      objectReference: {fileID: 205030533}
     - target: {fileID: 286842355648483633, guid: c1c031fc28e1f3d4dbb4f8d99219660a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -908,21 +904,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6401682724938985622, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
-      propertyPath: Health
-      value: 100
+    - target: {fileID: 6401682724938985621, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401682724938985621, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 6401682724938985622, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 1880464967}
     - target: {fileID: 6401682724938985622, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
-      propertyPath: aggroSlider
-      value: 
-      objectReference: {fileID: 1797059581}
-    - target: {fileID: 6401682724938985622, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
-      propertyPath: InitialAggro
-      value: 50
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6401682724938985622, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
       propertyPath: CurrentTarget
@@ -975,10 +971,6 @@ PrefabInstance:
     - target: {fileID: 6401682724938985626, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
       propertyPath: m_Name
       value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401682724938985626, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f0394e907faa5a41bd53b3b9f4566e7, type: 3}
@@ -1048,6 +1040,18 @@ PrefabInstance:
     - target: {fileID: 6883909921870534246, guid: e70afad95a1395c4f849aebc68755148, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883909921870534247, guid: e70afad95a1395c4f849aebc68755148, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883909921870534247, guid: e70afad95a1395c4f849aebc68755148, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883909921870534247, guid: e70afad95a1395c4f849aebc68755148, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1000000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e70afad95a1395c4f849aebc68755148, type: 3}

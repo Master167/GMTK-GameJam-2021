@@ -16,7 +16,7 @@ public static class Utility
         //Get the player's current position
         Vector2 pos = transform.position;
         //Calculate the proposed position
-        pos += direction * speed * Time.deltaTime;
+        pos += speed * Time.deltaTime * direction;
         //Ensure that the proposed position isn't outside of the limits
         pos.x = Mathf.Clamp(pos.x, min.x, max.x);
         pos.y = Mathf.Clamp(pos.y, min.y, max.y);

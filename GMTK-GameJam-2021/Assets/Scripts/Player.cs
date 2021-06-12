@@ -40,7 +40,6 @@ public class Player : MonoBehaviour
     {
         if (canSwingSword)
         {
-            Debug.Log("Swinging Sword");
             Sword.SetActive(true);
             Invoke(nameof(EnableSword), 1);
             canSwingSword = false;

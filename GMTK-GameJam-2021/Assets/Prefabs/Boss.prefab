@@ -93,15 +93,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6401682724938985626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1020f2525b6bf4046a4be1e3d703364f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  health: 0
-  aggroSlider: {fileID: 0}
+  InitialAggro: 50
+  Speed: 0
+  Health: 100
   CurrentTarget: {fileID: 0}
+  currentTargetAggro: 0
   Player: {fileID: 0}
 --- !u!61 &6401682724938985623
 BoxCollider2D:
@@ -141,7 +142,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

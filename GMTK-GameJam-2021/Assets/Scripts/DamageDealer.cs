@@ -18,7 +18,7 @@ public class DamageDealer : MonoBehaviour
     {
         this.initialPosition = transform.position;
 
-        InvokeRepeating("DoDamage", fireRate, fireRate);
+        InvokeRepeating(nameof(DoDamage), fireRate, fireRate);
     }
 
     // Update is called once per frame

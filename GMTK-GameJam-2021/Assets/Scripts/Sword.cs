@@ -5,30 +5,66 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Boss;
+
+    public float Angle;
+    public Vector3 Position1;
+    public Vector3 Position2;
+    public Vector3 Position3;
 
     // Start is called before the first frame update
     void Start()
     {
         Player = this.transform.parent.gameObject;
+        Boss = GameObject.FindGameObjectWithTag(Tags.Boss);
     }
 
     // Update is called once per frame
+    float count = 0.0f;
     void Update()
     {
-        var bossDirection = Vector3.up;// Just roll with it
+        if (count < 1.0f)
+        {
+            count += 1.0f * Time.deltaTime;
+
+            Vector3 m1 = Vector3.Lerp(Position1, Position2, count);
+            Vector3 m2 = Vector3.Lerp(Position2, Position3, count);
+            var direction = Vector3.Lerp(m1, m2, count);
+            Utility.Move(direction, transform, 10, true);
+        }
     }
 
     void OnEnable()
     {
-        Debug.Log("Swoard enabled");
-        Utility.Move(Vector3.up, this.transform, 1);
+        Invoke(nameof(EndSwing), 1f);
 
-        Invoke(nameof(EndSwing), 0.5f);
+        var heading = Boss.transform.position - Player.transform.position;
+        var distance = heading.magnitude;
+
+        Position2 = heading / distance;
+
+        var y = new Vector3(
+            (Position2.magnitude * Mathf.Cos(Angle) * Position2.x),
+            (Position2.magnitude * Mathf.Sin(Angle) * Position2.y)
+            );
+
+
+        Position1 = y;
+
+        var z = new Vector3(
+            (Position2.magnitude * Mathf.Cos(-Angle) * Position2.x),
+            (Position2.magnitude * Mathf.Sin(-Angle) * Position2.y)
+            );
+
+        transform.localPosition = y;
+
+
+        Position3 = z;
+
     }
 
     void EndSwing()
     {
-        Debug.Log("EndSwing");
         this.gameObject.SetActive(false);
     }
 

@@ -8,7 +8,7 @@ public static class Utility
     /// <param name="direction"></param>
     /// <param name="transform"></param>
     /// <param name="speed"></param>
-    public static void Move(Vector2 direction, Transform transform, float speed)
+    public static void Move(Vector2 direction, Transform transform, float speed, bool isLocal = false)
     {
         //Find the screen limits to the player's movement
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
@@ -21,6 +21,13 @@ public static class Utility
         pos.x = Mathf.Clamp(pos.x, min.x, max.x);
         pos.y = Mathf.Clamp(pos.y, min.y, max.y);
         //Update the player's position
-        transform.position = pos;
+        if (isLocal)
+        {
+            transform.localPosition = pos;
+        }
+        else
+        {
+            transform.position = pos;
+        }
     }
 }

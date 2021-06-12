@@ -22,8 +22,6 @@ public class Projectile : MonoBehaviour
             TimeAlive = 5;
         }
 
-        Invoke("Die", TimeAlive);
-
         TargetLocation = Target.transform;
     }
 

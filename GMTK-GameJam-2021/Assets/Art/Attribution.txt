@@ -5,3 +5,7 @@ Author: http://blog-buch.rhcloud.com
 File: Castle2.png
 Source: https://opengameart.org/content/castle-tiles-for-rpgs
 Author: Zabin, Hyptosis, and Danial Cook. https://opengameart.org/content/castle-tiles-for-rpgs
+
+File: Ardentryst-MagicSpriteEffects.7z (Extracted)
+Source: https://opengameart.org/content/magic-sprite-effects-for-ardentryst-by-jordan-trudgett
+Author: Jordan Trudgett | http://jordan.trudgett.com/

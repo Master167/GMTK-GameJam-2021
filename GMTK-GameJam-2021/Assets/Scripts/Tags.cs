@@ -7,4 +7,5 @@ public class Tags
     // Added Tags
     public const string Boss = "Boss";
     public const string Damage = "Damage";
+    public const string Projectile = "Projectile";
 }

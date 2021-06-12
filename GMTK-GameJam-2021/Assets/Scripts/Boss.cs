@@ -7,7 +7,9 @@ public class Boss : MonoBehaviour
 {
     public float speed;
 
-    public Slider aggroSlider;
+    public float health;
+
+    public Slider aggroSlider;// Maybe put this on the game manager?
 
     public GameObject CurrentTarget;
     public GameObject Player;
@@ -17,10 +19,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Get Player
-        Player = GameObject.FindGameObjectWithTag(Tags.Player);
-
-        // Boxx moves as half speed of player
+        // Box moves as half speed of player
         var playerScript = Player.GetComponent<Player>();
         speed = playerScript.speed / 2;
 
@@ -39,7 +38,7 @@ public class Boss : MonoBehaviour
         var distance = heading.magnitude;
         var direction = heading / distance; // This is now the normalized direction.
 
-        Move(direction);
+        Utility.Move(direction, transform, speed);
 
         UpdateAggro();
     }
@@ -47,23 +46,6 @@ public class Boss : MonoBehaviour
     void LateUpdate()
     {
         transform.rotation = Quaternion.identity;
-    }
-
-    private void Move(Vector2 direction)
-    {
-        //Find the screen limits to the player's movement
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        //Get the player's current position
-        Vector2 pos = transform.position;
-        //Calculate the proposed position
-        pos += direction * speed * Time.deltaTime;
-        //Ensure that the proposed position isn't outside of the limits
-        pos.x = Mathf.Clamp(pos.x, min.x, max.x);
-        pos.y = Mathf.Clamp(pos.y, min.y, max.y);
-
-        //Update the player's position
-        transform.position = pos;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -94,5 +76,12 @@ public class Boss : MonoBehaviour
         {
             aggroSlider.value -= .01f;
         }
+    }
+
+    public void RecieveDamage(GameObject Source, float damageAmount)
+    {
+        // Update this later
+        CurrentTarget = Source;
+        health -= damageAmount;
     }
 }

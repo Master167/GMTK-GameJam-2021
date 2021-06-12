@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  health: 0
   aggroSlider: {fileID: 0}
   CurrentTarget: {fileID: 0}
   Player: {fileID: 0}

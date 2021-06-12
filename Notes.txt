@@ -7,3 +7,12 @@ Arena
 Main Character move set
 Aggro system
 Damage dealer
+
+Need to: 
+-Make sword to rotate around player
+-Make sword generate aggro on boss
+-Create Aggro algorithm between player and damage
+-Make Boss stun routine on player.
+
+-Update Graphics and sprites
+

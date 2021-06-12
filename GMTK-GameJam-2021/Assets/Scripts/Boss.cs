@@ -5,28 +5,29 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-    public float speed;
+    public float InitialAggro;
+    public float Speed;
 
-    public float health;
-
-    public Slider aggroSlider;// Maybe put this on the game manager?
+    public float Health;
 
     public GameObject CurrentTarget;
-    public GameObject Player;
-
     private bool targetInRange = false;
+    
+    [HideInInspector]
+    public float currentTargetAggro;
+
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
     {
         // Box moves as half speed of player
         var playerScript = Player.GetComponent<Player>();
-        speed = playerScript.speed / 2;
+        Speed = playerScript.speed / 2;
 
         // Set target as player.
         CurrentTarget = Player;
-
-        aggroSlider.value = aggroSlider.maxValue / 2;
+        currentTargetAggro = InitialAggro;
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class Boss : MonoBehaviour
         var distance = heading.magnitude;
         var direction = heading / distance; // This is now the normalized direction.
 
-        Utility.Move(direction, transform, speed);
+        Utility.Move(direction, transform, Speed);
 
         UpdateAggro();
     }
@@ -68,11 +69,11 @@ public class Boss : MonoBehaviour
     {
         if (targetInRange)
         {
-            aggroSlider.value += .01f;
+            currentTargetAggro += .01f;
         }
         else
         {
-            aggroSlider.value -= .01f;
+            currentTargetAggro -= .01f;
         }
     }
 
@@ -80,6 +81,6 @@ public class Boss : MonoBehaviour
     {
         // Update this later
         CurrentTarget = Source;
-        health -= damageAmount;
+        Health -= damageAmount;
     }
 }

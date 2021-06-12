@@ -56,7 +56,6 @@ public class Projectile : MonoBehaviour
             bossScript.RecieveDamage(Creator, damage);
         }
 
-        Debug.Log("Projectile Dying");
         Destroy(this.gameObject);
     }
 }

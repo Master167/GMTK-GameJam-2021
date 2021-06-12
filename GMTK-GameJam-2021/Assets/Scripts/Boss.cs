@@ -52,7 +52,6 @@ public class Boss : MonoBehaviour
     {
         if (collision.gameObject.Equals(CurrentTarget))
         {
-            Debug.Log("In Range");
             targetInRange = true;
         }
     }
@@ -61,7 +60,6 @@ public class Boss : MonoBehaviour
     {
         if (collision.gameObject.Equals(CurrentTarget))
         {
-            Debug.Log("out of Range");
             targetInRange = false;
         }
     }

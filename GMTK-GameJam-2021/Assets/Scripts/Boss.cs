@@ -40,13 +40,13 @@ public class Boss : MonoBehaviour
         var direction = heading / distance; // This is now the normalized direction.
 
         Move(direction);
+
+        UpdateAggro();
     }
 
     void LateUpdate()
     {
         transform.rotation = Quaternion.identity;
-
-        UpdateAggro();
     }
 
     private void Move(Vector2 direction)
@@ -88,11 +88,11 @@ public class Boss : MonoBehaviour
     {
         if (targetInRange)
         {
-            aggroSlider.value += 2f;
+            aggroSlider.value += .01f;
         }
         else
         {
-            aggroSlider.value -= 1f;
+            aggroSlider.value -= .01f;
         }
     }
 }

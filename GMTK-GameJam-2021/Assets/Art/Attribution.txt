@@ -9,3 +9,7 @@ Author: Zabin, Hyptosis, and Danial Cook. https://opengameart.org/content/castle
 File: Ardentryst-MagicSpriteEffects.7z (Extracted)
 Source: https://opengameart.org/content/magic-sprite-effects-for-ardentryst-by-jordan-trudgett
 Author: Jordan Trudgett | http://jordan.trudgett.com/
+
+File: weapons_pack.zip (Extracted)
+Source: https://opengameart.org/content/weapons-pack-sword-bow-arrow-and-magic-wand
+Author: PiXeRaT (https://opengameart.org/users/pixerat)
